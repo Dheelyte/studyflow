@@ -78,7 +78,7 @@ export default function Sidebar({ isCollapsed, isOpen, onClose, onToggleCollapse
             <div className={styles.logo}>
               <ZapIcon size={28} fill="var(--primary)" /> <span>StudyFlow</span>
             </div>
-            
+             
             <Link href="/dashboard" className={styles.navItem}>
               <HomeIcon />
               <span>Home</span>
@@ -104,14 +104,13 @@ export default function Sidebar({ isCollapsed, isOpen, onClose, onToggleCollapse
                     </div>
                     {isLibraryOpen && (
                         <div style={{
-                            paddingLeft:'12px', 
+                            paddingLeft:'0', 
                             marginTop:'0', 
                             marginBottom:'16px', 
                             display:'flex', 
                             flexDirection:'column', 
                             gap:'8px',
-                            borderLeft: '1px solid var(--border)',
-                            marginLeft: '20px'
+                            marginLeft: '0'
                         }}>
                              {yourFlows.slice(0, 2).map(flow => (
                                 <Link href={`/playlist/${flow.id}`} key={flow.id} className={styles.playlistItem} style={{padding: '8px 12px'}}>
@@ -150,14 +149,13 @@ export default function Sidebar({ isCollapsed, isOpen, onClose, onToggleCollapse
                     </div>
                     {isCommunityOpen && (
                          <div style={{
-                            paddingLeft:'12px', 
+                            paddingLeft:'0', 
                             marginTop:'0', 
                             marginBottom:'16px', 
                             display:'flex', 
                             flexDirection:'column', 
                             gap:'8px',
-                            borderLeft: '1px solid var(--border)',
-                            marginLeft: '20px'
+                            marginLeft: '0'
                         }}>
                             {yourCommunities.slice(0, 2).map((comm) => (
                                 <Link href={`/community/${comm.id}`} key={comm.id} className={styles.playlistItem} style={{padding: '8px 12px'}}>
@@ -186,8 +184,6 @@ export default function Sidebar({ isCollapsed, isOpen, onClose, onToggleCollapse
             )}
 
           </nav>
-
-          {/* LibraryContainer removed as it was empty */}
 
           <div className={styles.footer}>
             <div className={styles.authButtons}>
