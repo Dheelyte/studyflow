@@ -290,3 +290,12 @@
         cursor: pointer;
     }
 }
+
+/* Hide scrollbar functionality added via cat */
+.navContainer::-webkit-scrollbar {
+  display: none;
+}
+.navContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

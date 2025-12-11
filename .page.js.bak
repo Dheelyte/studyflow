@@ -71,27 +71,9 @@ export default function LandingPage() {
         </FadeIn>
 
         <FadeIn direction="up" delay={0.3} className={styles.heroFooter}>
-        </FadeIn>
-
-        <FadeIn direction="up" delay={0.4} style={{marginTop: '48px', width: '100%', display: 'flex', justifyContent: 'center'}}>
-             <div style={{
-                 borderRadius: '16px', 
-                 overflow: 'hidden', 
-                 boxShadow: '0 20px 50px -10px rgba(0,0,0,0.3)', 
-                 border: '1px solid var(--border)',
-                 maxWidth: '1000px',
-                 width: '100%'
-             }}>
-                <video 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline 
-                    style={{width: '100%', display: 'block'}}
-                >
-                    <source src="/recording.mp4" type="video/mp4" />
-                </video>
-             </div>
+            <span className={styles.heroFooterItem}><CheckIcon size={16} /> Free to start</span>
+            <span className={styles.heroFooterItem}><CheckIcon size={16} /> No credit card</span>
+            <span className={styles.heroFooterItem}><CheckIcon size={16} /> powered by Gemini</span>
         </FadeIn>
       </section>
 
