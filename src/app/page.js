@@ -105,21 +105,21 @@ export default function LandingPage() {
                   <div className={styles.stepIconBg}>
                       <SearchIcon size={32} />
                   </div>
-                  <h3>1. Set your Goal</h3>
+                  <h3>Set your Goal</h3>
                   <p className={styles.featureText}>Type any skill or topic, from &quot;React Hooks&quot; to &quot;Astrophysics&quot;.</p>
               </FadeIn>
               <FadeIn direction="up" delay={0.2} className={styles.stepCard}>
                   <div className={styles.stepIconBg}>
                       <ZapIcon size={32} />
                   </div>
-                  <h3>2. AI Generation</h3>
+                  <h3>AI Generation</h3>
                   <p className={styles.featureText}>Our engine scrapes the best videos, articles, and quizzes to build your path.</p>
               </FadeIn>
               <FadeIn direction="up" delay={0.3} className={styles.stepCard}>
                   <div className={styles.stepIconBg}>
                       <PlayIcon size={32} />
                   </div>
-                  <h3>3. Start Learning</h3>
+                  <h3>Start Learning</h3>
                   <p className={styles.featureText}>Follow the playlist, track progress, and chat with the community.</p>
               </FadeIn>
           </div>
@@ -193,7 +193,7 @@ export default function LandingPage() {
             </FadeIn>
         </div>
         <div className={styles.communityVisual}>
-            <FadeIn direction="left" delay={0.2} className={styles.mockPostCard} style={{position:'absolute', top: 30, left: 20, zIndex: 2, transform: 'rotate(-2deg)', maxWidth:'320px'}}>
+            <FadeIn direction="left" delay={0.2} className={styles.mockPostCard} style={{position:'absolute', top: 20, left: 20, zIndex: 1, transform: 'rotate(-2deg)', maxWidth:'320px'}}>
                  <div style={{display:'flex', gap:'12px', marginBottom:'12px'}}>
                      <div style={{width:'32px', height:'32px', borderRadius:'50%', background:'linear-gradient(135deg, #6366f1, #a855f7)'}}></div>
                      <div>
@@ -209,7 +209,7 @@ export default function LandingPage() {
                       <span>💬 5</span>
                  </div>
             </FadeIn>
-            <FadeIn direction="left" delay={0.4} className={styles.mockPostCard} style={{position:'absolute', top: 140, right: 20, zIndex:1, maxWidth:'320px', transform: 'rotate(2deg)', boxShadow: '0 10px 30px -5px rgba(0,0,0,0.1)'}}>
+            <FadeIn direction="left" delay={0.4} className={styles.mockPostCard} style={{position:'absolute', top: 140, left: 140, zIndex: 2, transform: 'rotate(2deg)', maxWidth:'320px', boxShadow: '0 10px 30px -5px rgba(0,0,0,0.2)'}}>
                  <div style={{display:'flex', gap:'12px', marginBottom:'12px'}}>
                      <div style={{width:'32px', height:'32px', borderRadius:'50%', background:'linear-gradient(135deg, #f59e0b, #ef4444)'}}></div>
                      <div>
@@ -227,7 +227,7 @@ export default function LandingPage() {
       {/* 5. POPULAR TOPICS SECTION */}
        <section className={styles.topicsSection}>
            <FadeIn>
-                <h2 className={styles.sectionHeading}>Explore popular curriculums</h2>
+                <h2 className={styles.sectionHeading}>Endless Learning Possibilities</h2>
            </FadeIn>
            <div className={styles.marqueeContainer} style={{marginBottom:'24px'}}>
                <div className={styles.marqueeTrack}>
